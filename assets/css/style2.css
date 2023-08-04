@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+.main{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.article{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section img{
+    width: 300px;
+    margin: 10px;
+}
+
+.section input{
+    width: 90%;
+    height: 30px;
+    text-align: center;
+    border-radius: 2%;
+}
+
+.form{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form button{
+    width: 70px;
+    height: 30px;
+}

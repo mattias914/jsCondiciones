@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.section img{
+    border: 2px solid red;
+    height: 500px;
+}
+
+.sin__borde{
+    border: none !important;
+}
