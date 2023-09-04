@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    padding: 0px 40px;
+    }
+    .climas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    }
+    .clima {
+    background: black;
+    color: white;
+    }
+    #myChart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100% !important;
+        min-height: 320px;
+        aspect-ratio: 1/2 !important;
+    }

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Noto+Sans|Roboto+Mono:300');
+@import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fee2e2;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.img {
+    width:auto;
+    height: 290px;
+    margin:  0;
+}
+
+.contenedor{
+    margin-top: 20px;
+}
+
+.moneda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+}
+
+.moneda select {
+    padding: 10px 20px 10px 10px;
+    border: 0.2px solid lightgrey;
+    font-size: 16px;
+    appearance: none;
+}
+
+#moneda__dos{
+    width: 379px;
+}
+
+.moneda input {
+    font-size: 28.2px;
+    border: 0;
+    text-align: right;
+}
+
+.moneda input:focus {
+    transform: scale(1.2);
+}
+
+.taza__cambio{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+}
+
+.cambio{
+    display: flex;
+    font-size: 19.2px;
+    text-align: center;
+    place-items: center;
+}
+
+#mensaje__error{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: red;
+}
+
+.mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    min-height: 320px;
+    aspect-ratio: 1/2 !important;
+}
+
+/*boton*/
+
+.button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ff6f69;
+    transition: all 500ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    background:none;
+    outline: 2px solid #ff6f69;
+}
+
+button:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+    outline: 2px solid #ff6f69;
+    box-shadow: 2px 3px 10px -2px #ff6f69;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ff6f69;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 500ms;
+}
+
+button:hover::before {
+    width: 200%;
+}

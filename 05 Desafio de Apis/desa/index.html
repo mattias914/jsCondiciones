@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+	<main>
+		<div class="logo">
+			<img src="assets/img/tupapitobnrico_billete_de_dienro_en_4k_12b532bf-b79a-4308-a2f4-0bb2bbe59f66-removebg-preview.png" class="img" alt="">
+			<div class="letras">
+				<p>Conversor</p>
+				<p>de</p>
+				<p>monedas</p>
+			</div>
+		</div>
+
+		<div class="contenedor">
+			<div class="moneda">
+				<select name="" id="moneda__uno">
+					<option value="EUR" selected>EUR</option>
+					<option value="USD">USD</option>
+				</select>
+
+				<input type="number" value="1" id="cantidad">
+			</div>
+
+			<div class="moneda">
+				<select name="" id="moneda__dos">
+					<option value="USD" selected>USD</option>
+					<option value="EUR">EUR</option>
+				</select>
+
+			</div>
+
+			<div class="taza__cambio">
+				<button class="button" id="taza">Resultado</button>
+				<div class="cambio" id="cambio"></div>
+			</div>
+		</div>
+		<div id="mensaje__error"></div>
+	</main>
+	
+	<script src="assets/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
